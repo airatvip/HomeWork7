@@ -42,16 +42,16 @@ public class Main {
             System.out.println("Задание 2.1");
 
             double totalSum = 15000.00;
-            int i = 1;
+            int i = 0;
             double percent = 7;
             while (totalSum <= 12_000_000.00) {
                 i++;
                 totalSum += totalSum * percent / 100;
                 System.out.printf("Месяц %d, сумма накоплений равна %.2f рублей\n", i, totalSum);
             }
-            System.out.println("Задание 2.1");
+            System.out.println("Задание 2.2");
             double cash = 15000.00;
-            int j = 1;
+            int j = 0;
             double percent1 = 7;
             while (cash <= 12_000_000.00) {
                 j++;
@@ -62,7 +62,7 @@ public class Main {
 
             System.out.println("Задание 2.3");
             double money = 15000.00;
-            int x = 1;
+            int x = 0;
             double percent2 = 7;
             while (money <= 12_000_000.00) {
                 x++;
@@ -76,16 +76,16 @@ public class Main {
                System.out.printf ("Сегодня пятница %d-е число. Необходимо подготовить отчет. \n", friday);
            }
 
-
        }
        public static void task3(){
            System.out.println("Задание 3.1");
         int i;
         int year = 2022;
         for (i = 0; i%79 == 0; i += 79) {
-            boolean x = i >=year-200 && i <=year +100;
-            if (x)
-            System.out.println( i);
+            boolean x = i >= year - 200 && i <= year + 100;
+            if (x) {
+                System.out.println(i);
+            }
         }
 
            System.out.println("Задание 3.2");
@@ -100,6 +100,5 @@ public class Main {
         }
 
         }
-
-
 }
+
